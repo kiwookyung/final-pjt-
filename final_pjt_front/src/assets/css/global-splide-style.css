@@ -1,0 +1,32 @@
+/* global-splide-style.css - 전역에서 Splide 화살표 통일 */
+
+/* 기본 화살표 버튼 투명도, 크기, 모양 */
+.splide__arrow {
+  background-color: rgba(255, 255, 255, 0.2); /* 투명도 조절 */
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  backdrop-filter: blur(4px);
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+/* 화살표 hover 시 효과 */
+.splide__arrow:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+/* 화살표 내부 아이콘 크기 */
+.splide__arrow svg {
+  width: 16px;
+  height: 16px;
+  fill: #fff;
+}
+
+/* 화살표 위치 살짝 조정 (좌/우) */
+.splide__arrow--prev {
+  left: 1rem;
+}
+.splide__arrow--next {
+  right: 1rem;
+}
