@@ -1,0 +1,135 @@
+/* === 전역 기본 스타일 === */
+body {
+  background-color: #111;
+  color: white;
+  font-family: 'Noto Sans KR', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* === 전역 여백 컨테이너 === */
+.main-content {
+  padding-top: 100px;
+  padding-inline: 16px;
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    padding-top: 80px;
+  }
+}
+
+/* === 공통 섹션 제목 스타일 === */
+.section-heading {
+  font-size: 28px;
+  font-weight: 700;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  padding-left: 0.25rem;
+  border-left: 6px solid var(--primary-color);
+  color: white;
+  letter-spacing: -0.5px;
+}
+
+@media (max-width: 768px) {
+  .section-heading {
+    font-size: 22px;
+    margin-top: 2rem;
+    border-left-width: 4px;
+  }
+}
+
+/* === 날씨 추천 섹션 제목 === */
+.weather-heading {
+  font-size: 26px;
+  font-weight: 800;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  letter-spacing: -0.5px;
+  text-align: center;
+}
+
+.gradient-text {
+  background: linear-gradient(to right, #4fc3f7, #81d4fa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.emoji {
+  margin-right: 0.25rem;
+}
+
+
+@media (max-width: 768px) {
+  .weather-heading {
+    font-size: 22px;
+    margin-top: 2rem;
+  }
+}
+
+/* === 캐러셀 섹션 구조 === */
+.carousel-section {
+  width: 100%;
+  padding-inline: 2rem;
+  margin-bottom: 4rem;
+  scroll-margin-top: 120px;
+}
+
+.carousel-header {
+  max-width: 1400px;
+  margin: 0 auto 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 0.25rem;
+}
+
+.carousel-inner {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* === 포인트 컬러 === */
+:root {
+  --primary-color: #682cd4;
+  --secondary-color: #4fc3f7;
+  --accent-yellow: #feca57;
+}
+
+/* === 더보기 링크 === */
+.more-link {
+  font-size: 0.95rem;
+  color: #aaa;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.more-link:hover {
+  color: var(--primary-color);
+}
+
+/* === 부드러운 진입 애니메이션 === */
+.fade-in-up {
+  animation: fadeInUp 0.4s ease both;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* TOP 추천 영화 */
+.top-heading {
+  font-size: 32px;
+  font-weight: 900;
+  color: var(--accent-yellow);
+  letter-spacing: -1px;
+  text-shadow: 1px 1px 4px black;
+  margin-bottom: 1.5rem;
+}
